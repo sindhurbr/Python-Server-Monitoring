@@ -13,7 +13,7 @@ s=s+"---------------------------------------------------------------------------
 for ip in clusterList:
     try:
 
-        url = 'http://'+ip+':81/cgi-bin/serverstat.pl'
+        url = 'http://'+ip+':81/cgi-bin/serverStatistics.pl'
         response = requests.get(url,verify=False, timeout=2)
         soup = BeautifulSoup(response.text, 'html.parser')
         for heading in soup.find_all(["h1"]):
