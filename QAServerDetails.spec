@@ -3,8 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['QAServerDetails.py'],
-             pathex=['/Users/rohan.gowda/planningApp/python'],
+a = Analysis(
              binaries=[],
              datas=[],
              hiddenimports=[],
