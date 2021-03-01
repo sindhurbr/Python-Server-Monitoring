@@ -23,9 +23,9 @@ for ip in clusterList:
             if count == 3:
                 s = s + ' ' +'DB - '+ heading.text + '\n'     
             if(heading.text == "User (https) login"):
-                s= s + ' ' + 'App - '+heading['href'].replace('.adaptiveplanning.com','')+'\n'
+                s= s + ' ' + 'App - '+heading['href'].replace('.serverdetails.com','')+'\n'
             if(heading.text == "Internal (hosting) login"):
-                s= s + ' ' + 'Internal - '+ heading['href'].replace('.adaptiveplanning.com','') +'\n'
+                s= s + ' ' + 'Internal - '+ heading['href'].replace('.serverdetails.com','') +'\n'
             
             count = count +1
     except requests.exceptions.Timeout:
